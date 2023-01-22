@@ -39,6 +39,6 @@ class MainActivity : AppCompatActivity() {
             addView(image, WRAP_CONTENT, WRAP_CONTENT)
             addView(address, WRAP_CONTENT, WRAP_CONTENT)
         }
-        setContentView(R.layout.activity_main)
+        setContentView(layout)
     }
 }
