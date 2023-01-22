@@ -40,5 +40,7 @@ class MainActivity : AppCompatActivity() {
             addView(address, WRAP_CONTENT, WRAP_CONTENT)
         }
         setContentView(layout)
+        //만약 xml과 함께 사용한다면 라벨링 필요
+        val textView1 = FindViewById<TextView>(R.id.text1)
     }
 }
