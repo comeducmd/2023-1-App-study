@@ -1,6 +1,5 @@
 class Bird { 
-    //zz
-
+    
     var name: String
     var wing: Int
     var beak: String
