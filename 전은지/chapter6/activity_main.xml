@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"/>
+
+    <!--width & height: match_parent, wrap_content, scalar(dp)
+        margin, padding
+        visibility: invisible(transparent), gone(no width, height)
+        multiple: | (ex "web|phone")
+        -->
+    <!--TextView: text, textColor, textSize(sp), textStyle, autoLink,
+                maxLines: max line, ellipsize: omit position(start, middle, end)-->
+    <TextView
+        android:text="textview test blablablalblalblblalbalblalblablalblablalblabalblalblabla
+        lblablalblablalblalbalblalbalblabblalablalblablalbalblalbbalblalblablalblablalbalblal
+        lblalblablablalblablalbalblablabl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:autoLink="web|phone"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <!--ImageView: src (resource image)
+                maxHeight, adjustViewBounds-->
+
+    <ImageView
+        android:src="@drawable/babygirl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"
+        android:background="#FFCFCF"/>
+
+    <!--Button, CheckBox, RadioBtn-->
+    <CheckBox
+        android:text="4강 과제"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:text="5강 과제"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:text="고기를 잡으로 바다로 가자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:text="고기를 잡으로 산으로 가자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <!--EditText
+        lines, maxlines
+        inputType-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:inputType="phone"/>
+
+    <!-- view binding -->
+    <!-- gradle => view binding => true -->
+
+</LinearLayout>
