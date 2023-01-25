@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--5가지 레이아웃 중 프레임(겹쳐져 있는 상태에서 사라지고 나타나고)과 제한 레이아웃(디자인모드로 설계)를 제외한 3가지 레이아웃 사용-->
+
+<!--선형 배치-linearlayout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--상대위치 배치-relativelayout-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+        <ImageView
+            android:id="@+id/icon_add"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/add"
+            android:layout_marginRight="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처 추가"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/icon_add"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="010-498"
+        android:textSize="40sp"/>
+
+    <!--표 형태 배치-gridlayout-->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="5"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="6"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="8"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+        <TextView
+            android:text="9"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingLeft="40sp"
+            android:paddingRight="40sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"/>
+
+    </GridLayout>
+
+    <!--선형 배치-linearlayout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="70sp"
+            android:text="*"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="70sp"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="70sp"
+            android:text="#"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!--상대위치 배치-relativelayout-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+        <ImageView
+            android:id="@+id/icon_video"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/video"
+            android:layout_marginRight="30sp"/>
+        <ImageView
+            android:id="@+id/icon_call"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/call"
+            android:layout_toRightOf="@id/icon_video" />
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/back"
+            android:layout_toRightOf="@id/icon_call"
+            android:layout_marginLeft="30sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
