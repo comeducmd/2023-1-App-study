@@ -33,7 +33,7 @@
 //RelativeLayout도 flutter에 없는데 아직 왜 쓰는지 잘 모르겠다. 다른거로 충분히 대체 가능해보임.
 //gravity -> flutter의 align과 유사
 //layout_gravity -> flutter의 MainAxisAlignment와 유사
-//android:layout_weight="1" ->
+//android:layout_weight="1" -> flutter의 flex와 유사
 //코틀린의 아름다움은 ConstrainLayout 인듯하다. 각 개체끼리의 연관성으로 코딩가능
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
